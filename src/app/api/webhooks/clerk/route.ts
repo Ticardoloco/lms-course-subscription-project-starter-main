@@ -53,7 +53,7 @@ export async function POST(req:Request) {
 
             await User.findOneAndUpdate({clerkId: id}, {
                 clerkId: id,
-                email: email_addresses[0].email_address.at,
+                email: email_addresses[0].email_address,
                 firstName: first_name,
                 lastName: last_name,
                 phoneNumber: phone_numbers,
