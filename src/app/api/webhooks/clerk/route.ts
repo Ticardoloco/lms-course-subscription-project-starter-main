@@ -56,7 +56,7 @@ export async function POST(req:Request) {
                 email: email_addresses[0].email_address,
                 firstName: first_name,
                 lastName: last_name,
-                phoneNumber: phone_numbers,
+                phoneNumber: phone_numbers[0]?.phone_number,
                 imageUrl: image_url,
             }, {
                 upsert: true,
