@@ -8,9 +8,9 @@ export async function POST(req:Request) {
     // get svix headers
     const headerPayload = await headers();
 
-    const svix_id = headerPayload.get("svix_id");
-    const svix_timestamp = headerPayload.get("svix_timestamp");
-    const svix_signature = headerPayload.get("svix_signature");
+    const svix_id = headerPayload.get("svix-id");
+    const svix_timestamp = headerPayload.get("svix-timestamp");
+    const svix_signature = headerPayload.get("svix-signature");
 
     // check if svix headers are present
 
